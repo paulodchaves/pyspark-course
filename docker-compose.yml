@@ -6,13 +6,14 @@ networks:
   demo-net:
 services:
   spark:
-    image: jupyter/all-spark-notebook:latest
+    image: ${REPO}
+    container_name: spark
     ports:
     - "8888:8888/tcp"
     - "4040:4040/tcp"
     networks:
     - demo-net
-    working_dir: ./notebooks
+    working_dir: /home/$USER/notebooks
     environment:
       CHOWN_HOME: "yes"
       GRANT_SUDO: "yes"
@@ -26,7 +27,7 @@ services:
      restart_policy:
        condition: on-failure
     volumes:
-    - ./notebooks:/opt/spark/notebooks
+    - $PWD/notebooks:/home/$USER/notebooks
 
   postgres:
     image: postgres:13.1
