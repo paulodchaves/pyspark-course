@@ -51,7 +51,7 @@ format: autoflake isort black
 
 .PHONY: setup
 setup:
-	docker compose up -d --force-recreate --remove-orphans
+	docker-compose up -d --force-recreate --remove-orphans
 	sleep 120
 
 .PHONY: down

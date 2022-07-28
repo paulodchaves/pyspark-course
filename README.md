@@ -9,7 +9,7 @@
 
 ## The course
 
-Projeto voltado para a resolução do case da Boticario, usando as melhores práticas e técnicas de desenvolvimento para a criação do ambiente local integrado com a Google Cloud Platform (GCP), criação de features usando técnicas de TDD, Dynamically Generating DAGs e CI/CD para deploy automatizado usando o GitHub Actions.
+Treinamento 
 
 ## Quickstart
 

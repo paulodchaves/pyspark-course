@@ -31,7 +31,7 @@ services:
 
   postgres:
     image: postgres:13.1
-    container_name: course-database
+    container_name: postgres
     ports:
       - 54320:54320
     environment:
